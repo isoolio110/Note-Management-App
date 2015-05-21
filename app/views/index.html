@@ -1,17 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="NoteWrangler">
 <head>
   <meta charset="UTF-8">
   <title>Note Wrangler</title>
   <link rel="stylesheet" href="assets/styles/bootstrap.css"></link>
-  <link rel="stylesheet" href="assets/styles/bootstrap-theme.css"></link>  
+  <link rel="stylesheet" href="assets/styles/bootstrap-theme.css"></link>
 </head>
 <body>
-  
+  <h1>Note Wrangler</h1>
+  <div ng-view class="container-fluid"></div>
   <!-- vendor -->
   <script src="assets/javascript/vendor/jquery-2.1.4.min.js"></script>
   <script src="assets/javascript/vendor/angular.js"></script>
   <script src="assets/javascript/vendor/angular-route.js"></script>
-  <script src="assets/javascript/vendor/angular-resource.js"></script>    
+  <script src="assets/javascript/vendor/angular-resource.js"></script> 
+  <!-- app -->
+  <script src="assets/javascript/app.js"></script>
+  <script src="assets/javascript/routes.js"></script>
+  <!-- directives -->
+  <!-- controllers -->
+  <script src="assets/javascript/controllers/noteCreateController.js"></script>
+  <script src="assets/javascript/controllers/noteEditController.js"></script>
+  <script src="assets/javascript/controllers/noteIndexController.js"></script>
+  <script src="assets/javascript/controllers/noteShowController.js"></script>
+  <!-- services -->
+  <script src="assets/javascript/services/note.js"></script>
 </body>
 </html>
