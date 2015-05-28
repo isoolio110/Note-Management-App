@@ -1,2 +1,5 @@
 angular.module('NoteWrangler', 
-  ['ngRoute', 'ngResource']);
+  ['ngRoute', 'ngResource', 'ngGravatar']).config(
+  function(GravatarProvider){
+    GravatarProvider.setSize(200);
+  });

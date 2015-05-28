@@ -23,6 +23,16 @@ angular.module('NoteWrangler')
       .when('/notes/:id/edit', {
       templateUrl: "assets/templates/notes/edit.html",
       controller: "NotesEditController"
-      });
+      })
+
+      .when('/users', {
+        templateUrl: "assets/templates/users/index.html",
+        controller: "UsersIndexController"
+      })
+
+      .when('/users/:id', {
+        templateUrl: "assets/templates/users/show.html",
+        controller: "UsersShowController"
+      })
 
 });
